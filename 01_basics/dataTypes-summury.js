@@ -47,4 +47,26 @@ const myFun = function(){
     console.log("Hello Sawan");
 }
 
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+//Stack(Primitive), Heap (Non-Primitive)
+//Stack me copy milta ha
+// Heap me refrence milta ha
+
+let myHomeName = "Bhayyuu";
+
+let anotherName = myHomeName;
+anotherName = "sawan";
+
+console.log(myHomeName);
+console.log(anotherName);
+
+let userOne = {
+    email: "sawan@gmail.com",
+    upi: "user@ybl",
+}
+
+let userTwo = userOne;
+userTwo.email = "rdx@gmail.com";
+console.log(userOne.email);
+console.log(userTwo.email);
