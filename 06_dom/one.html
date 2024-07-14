@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manupulating</title>
+</head>
+<body>
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday </div>
+        <div class="day">Thursday</div>
+    </div>
+</body>
+<script>
+    const parentElm = document.querySelector('.parent')
+    // console.log(parentElm);
+    // console.log(parentElm.children);
+    // console.log(parentElm.children[0].innerHTML);
+
+    for(let i=0; i<parentElm.children.length; i++) {
+        // console.log(parentElm.children[i].innerHTML);
+    }
+
+    parentElm.children[1].style.color = 'orange';
+    // console.log(parentElm.firstElementChild);
+    // console.log(parentElm.lastElementChild);
+
+
+    const dayOne = document.querySelector('.day')
+    // console.log(dayOne);
+    // console.log(dayOne.parentElement);
+    // console.log(dayOne.nextElementSibling);
+
+    // console.log("NODES: ", parentElm.childNodes);
+
+    
+</script>
+</html>
